@@ -7,7 +7,7 @@
 
 html, body {
   font-family: 'Noto Sans JP', sans-serif;
-  color: #494b4d;
+  color: #404041;
   width: 100vw;
 }
 
@@ -17,7 +17,7 @@ img {
 
 a {
   text-decoration: none;
-  color: #0c2c36;
+  color: #258880;
 }
 
 a:hover {
@@ -28,22 +28,27 @@ a:hover {
   max-width: 680px;
   width: 100%;
   margin: 0 auto;
-  line-height: 1.5em;
+  line-height: 1.5rem;
   word-spacing: 1px;
 }
 
 header {
   text-align: center;
-  padding: 60px 0 30px 0;
+  padding: 60px 0 0 0;
 }
 
 header h1 {
-  margin-bottom: 5px;
-  color: #0c2c36;
+  font-size: 1.5rem;
+  margin-bottom: 0.313rem;
+  color: #258880;
 }
 
 header #description {
   font-weight: 300;
+}
+
+main {
+  margin: 1.875rem 1rem;
 }
 
 figure {
@@ -57,11 +62,117 @@ figure figcaption {
 }
 
 article h2 {
-  margin: 1em 0;
+  margin: 1rem 0;
+  color: #258880;
 }
 
 article h4 {
-  margin: .8rem 0;
-  color: #0c2c36;
+  margin: 1.5rem 0 .2rem 0;
+  color: #2a645f;
+}
+
+article .more {
+  margin-top: 1rem;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem 0;
+}
+
+#line {
+  height: 2px;
+  width: 100%;
+  margin: 4rem 0;
+  background-color: black;
+}
+
+#line .grades {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+.grade {
+  position: relative;
+  height: 12px;
+  width: 2px;
+  background-color: black;
+}
+
+.grade:after {
+  content: "year";
+  position: absolute;
+  top: 150%;
+  left: -10px;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+#y-570::after {
+  content: "570";
+}
+
+#y-575::after {
+  content: "575";
+}
+
+#y-580::after {
+  content: "580";
+}
+
+#y-585::after {
+  content: "585";
+}
+
+#y-590::after {
+  content: "590";
+}
+
+#y-595::after {
+  content: "595";
+}
+
+#y-600::after {
+  content: "600";
+}
+
+#y-605::after {
+  content: "605";
+}
+
+#y-610::after {
+  content: "610";
+}
+
+#y-615::after {
+  content: "615";
+}
+
+#y-620::after {
+  content: "620";
+}
+
+#y-625::after {
+  content: "625";
+}
+
+#y-630::after {
+  content: "630";
+}
+
+#y-635::after {
+  content: "635";
+}
+
+@media only screen and (max-width: 480px) {
+  html, body {
+    font-size: 14px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
