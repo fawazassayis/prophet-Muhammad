@@ -8,6 +8,7 @@ html, body{
     color: $main-font-color;
     width: 100vw;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 img{
     width: 100%;

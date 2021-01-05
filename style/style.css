@@ -10,6 +10,7 @@ html, body {
   color: #404041;
   width: 100vw;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 img {
