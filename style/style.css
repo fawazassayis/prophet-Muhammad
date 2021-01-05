@@ -9,6 +9,7 @@ html, body {
   font-family: 'Noto Sans JP', sans-serif;
   color: #404041;
   width: 100vw;
+  scroll-behavior: smooth;
 }
 
 img {
@@ -80,7 +81,18 @@ footer {
   padding: 1rem 0;
 }
 
+#go-top {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  margin: 30px;
+  cursor: pointer;
+}
+
 #line {
+  position: relative;
   height: 2px;
   width: 100%;
   margin: 4rem 0;
@@ -98,81 +110,124 @@ footer {
           transform: translate(0, -5px);
 }
 
-.grade {
-  position: relative;
-  height: 12px;
-  width: 2px;
-  background-color: black;
+.events {
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 654px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.grade:after {
+.events .event {
+  position: relative;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #001032;
+}
+
+.events .event:before {
   content: "year";
   position: absolute;
-  top: 150%;
-  left: -10px;
-  font-size: .8rem;
-  font-weight: bold;
+  bottom: 150%;
+  left: -5px;
+  font-size: .7rem;
 }
 
-#y-570::after {
+.events .event:hover {
+  height: 10px;
+  width: 10px;
+  background: #258880;
+}
+
+.events .shared {
+  position: relative;
+  top: 20px;
+  left: 0;
+}
+
+.events .shared:before {
+  content: "" !important;
+}
+
+#t-570::before {
   content: "570";
 }
 
-#y-575::after {
+#t-575::before {
   content: "575";
 }
 
-#y-580::after {
+#t-578::before {
+  content: "578";
+}
+
+#t-580::before {
   content: "580";
 }
 
-#y-585::after {
-  content: "585";
+#t-594::before {
+  content: "594";
 }
 
-#y-590::after {
-  content: "590";
+#t-594::before {
+  content: "594";
 }
 
-#y-595::after {
+#t-595::before {
   content: "595";
 }
 
-#y-600::after {
-  content: "600";
+#t-609::before {
+  content: "609";
 }
 
-#y-605::after {
-  content: "605";
-}
-
-#y-610::after {
+#t-610::before {
   content: "610";
 }
 
-#y-615::after {
-  content: "615";
+#t-613::before {
+  content: "613";
 }
 
-#y-620::after {
-  content: "620";
+#t-622::before {
+  content: "622";
 }
 
-#y-625::after {
+#t-625::before {
   content: "625";
 }
 
-#y-630::after {
+#t-628::before {
+  content: "628";
+}
+
+#t-630::before {
   content: "630";
 }
 
-#y-635::after {
-  content: "635";
+#t-630::before {
+  content: "630";
+}
+
+#t-632::before {
+  content: "632";
 }
 
 @media only screen and (max-width: 480px) {
   html, body {
     font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  #timeline {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */
