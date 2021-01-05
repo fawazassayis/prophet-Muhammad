@@ -4,9 +4,10 @@
 
 // * Page styling
 .container{
-    max-width: 680px;
+    max-width: 42.5em;
     width: 100%;
     margin: 0 auto;
+    font-size: 1.125rem;
     line-height: 1.5rem;
     word-spacing: 1px;
 }
@@ -28,7 +29,7 @@ main{
 figure{
     figcaption{
         text-align: center;
-        font-size: .9rem;
+        font-size: .8rem;
         font-weight: 300;
     }
     margin-bottom: 2rem;
@@ -36,6 +37,7 @@ figure{
 article{
     h2{
         margin: 1rem 0;
+        font-size: 1.688rem;
         color: $highlights;
     }
     h4{
@@ -50,6 +52,41 @@ footer{
     text-align: center;
     padding: 1rem 0;
 }
+
+#line{
+    height: 2px;
+    width: 100%;
+    background: $main-font-color;
+    margin: 3rem 0 4rem 0;
+}
+.events{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.event-dot{
+    width: 12px;
+    height: 12px;
+    background: rgb(31, 32, 32);
+    border-radius: 50%;
+    position: relative;
+    top: -5px;
+    span{
+        font-size: 12px;
+        position: relative;
+        top: 10px;
+        left: -4px;
+        transition: all .5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    &:hover{
+        background: $highlights;
+        span{
+            font-size: .8rem;
+        }
+    }
+}
+
+
 #go-top{
     position: fixed;
     right: 0;
@@ -60,106 +97,19 @@ footer{
     cursor: pointer;
 }
 
-// * Timeline Styling 
-#line{
-    position: relative;
-    height: 2px;
-    width: 100%;
-    margin: 4rem 0;
-    background-color: black;
-    .grades{
-        display: flex;
-        justify-content: space-between;
-        transform: translate(0 , -5px);
-    }
-}
-// * Grades
-// .grade{
-//     position: relative;
-//     height: 12px;
-//     width: 2px;
-//     background-color: black;
-//     &:after{
-//         content: "year";
-//         position: absolute;
-//         top: 150%;
-//         left: -10px;
-//         font-size: .8rem;
-//         font-weight: bold;
-//     }
-// }
-// // adding years to each grade
-// #y-570::after{content: "570";}
-// #y-575::after{content: "575";}
-// #y-580::after{content: "580";}
-// #y-585::after{content: "585";}
-// #y-590::after{content: "590";}
-// #y-595::after{content: "595";}
-// #y-600::after{content: "600";}
-// #y-605::after{content: "605";}
-// #y-610::after{content: "610";}
-// #y-615::after{content: "615";}
-// #y-620::after{content: "620";}
-// #y-625::after{content: "625";}
-// #y-630::after{content: "630";}
-// #y-635::after{content: "635";}
-
-// * events
-.events{
-    position: absolute;
-    top: -3px;
-    left: -3px;
-    width: 654px;
-    display: flex;
-    justify-content: space-between;
-    .event{
-        position: relative;
-        width: 8px;
-        height: 8px;
-        border-radius: 50%;
-        background: #001032;
-        &:before{
-            content: "year";
-            position: absolute;
-            bottom: 150%;
-            left: -5px;
-            font-size: .7rem;
-        }
-        &:hover{
-            height: 10px;
-            width: 10px;
-            background: $highlights;
-        }
-    }
-    .shared{
-        position: relative;
-        top: 20px;
-        left: 0;
-        &:before{
-            content: "" !important;
-        }
-    }
-}
-#t-570::before{content: "570";}
-#t-575::before{content: "575";}
-#t-578::before{content: "578";}
-#t-580::before{content: "580";}
-#t-594::before{content: "594";}
-#t-594::before{content: "594";}
-#t-595::before{content: "595";}
-#t-609::before{content: "609";}
-#t-610::before{content: "610";}
-#t-613::before{content: "613";}
-#t-622::before{content: "622";}
-#t-625::before{content: "625";}
-#t-628::before{content: "628";}
-#t-630::before{content: "630";}
-#t-630::before{content: "630";}
-#t-632::before{content: "632";}
-
 @media only screen and (max-width: 480px){
     html, body{
-        font-size: 14px;
+        font-size: 11px;
+    }
+    header{
+        h1{
+            font-size: 1.4rem;
+        }
+    }
+    article{
+        h2{
+            font-size: 1.3rem;
+        }
     }
 }
 @media only screen and (max-width: 680px){
