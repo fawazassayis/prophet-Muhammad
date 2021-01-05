@@ -3,7 +3,7 @@
 
 
 // * Page styling
-.container{
+main{
     max-width: 42.5em;
     width: 100%;
     margin: 0 auto;
@@ -23,9 +23,6 @@ header{
         font-weight: 300;
     }
 }
-main{
-    margin: 1.875rem 1rem;
-}
 figure{
     figcaption{
         text-align: center;
@@ -35,9 +32,14 @@ figure{
     margin-bottom: 2rem;
 }
 article{
+    margin: 1.875rem 1rem;
     h2{
         margin: 1rem 0;
         font-size: 1.688rem;
+        color: $highlights;
+    }
+    h3{
+        margin: 2rem 0;
         color: $highlights;
     }
     h4{
@@ -47,10 +49,6 @@ article{
     .more{
         margin-top: 1rem;
     }
-}
-footer{
-    text-align: center;
-    padding: 1rem 0;
 }
 
 #line{
@@ -85,8 +83,6 @@ footer{
         }
     }
 }
-
-
 #go-top{
     position: fixed;
     right: 0;
@@ -95,6 +91,10 @@ footer{
     height: 40px;
     margin: 30px;
     cursor: pointer;
+}
+footer{
+    text-align: center;
+    padding: 1rem 0;
 }
 
 @media only screen and (max-width: 480px){
